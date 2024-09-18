@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Karthikeyan.S- Portfolio</title>
+    <style>
+            body{
+                font-family: Arial,Arial, Helvetica, sans-serif sans-serif;
+                margin :0;
+                padding: 0;
+                background-color:#e411e4 ;
+            }
+            header{
+                background-color:#fb19fb;
+                color:#f9f9f9;
+                text-align: center;
+                padding: 2rem 0;
+                position: relative;
+            }
+
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            .profile-picture {
+               width: 100px;
+              height: 100px;
+             border-radius: 5%;
+              object-fit: fill;
+              position: absolute; 
+              top: 75px;
+             left: 100px;
+             border: 5px solid #ffffff; 
+            }
+            nav {
+                background-color:	#f532bef3;
+                color: #f3eeeef4;
+                text-align: center;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 10px;
+            
+            }
+            nav ul li{
+                display: inline;
+                margin: 2px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: #fbf8f8;
+            }
+            .section-content{
+                background-color:#fffeffe9 	;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(244, 242, 242, 0.1);
+            
+            }
+            .download-button{
+                background-color:#663399;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover{
+                background-color: blue;
+            }
+            footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color:#eb2bce;
+                color: #fff;
+
+            }
+            ul{
+                list-style-type:upper-roman;
+                padding-left: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="karthi.jpg" alt="your Profile Picture" class="profile-picture">
+                <h1>Karthikeyan.S</h1>
+                <p>Electronics and Communication Engineering Student</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">  About  </a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            
+
+
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hii Everyone!I am Karthikeyan and I am an Electronics and Communication Engineering Student</p>
+            </div>
+        </section>
+
+         <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <p>B.E. Electronics and Communication Engineering - Rohini College of Engineering and Technology, palkulam</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                
+                    <li>Circuit design</li>
+                    <li>Sensor integration</li>
+                    <li>Embedded systems</li>
+                    <li>MS Word</li>
+                    <li>MS Excel</li>
+                    <li>System Architecture</li>
+                    <li>Communication</li>
+                
+            </div>
+        </section> 
+        <section id="resume">
+            <center> 
+                <div class="section-content">
+                    <h2>Resume</h2>
+                    <a href="https://drive.google.com/file/d/1T5Tn-rJYtkSMVQ-ob-6afnPb-9dtMPb_/view?usp=sharing" class="download-button" >Download CV</a>
+                </div>
+             </center>
+        </section>
+        <footer>
+            <p>&copy; 2024 Karthikeyan</p>
+        </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>
+            {
+                anchor.addEventListener('click', function(e){
+                    e.preventDefault();
+
+                    const targetId=this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top:targetElement.offsetTop,
+                            behavior:'smooth'
+
+                        });
+                    }
+                });
+            });      
+            </script>
+    </body>
+</html>
